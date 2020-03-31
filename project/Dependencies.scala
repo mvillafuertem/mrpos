@@ -1,8 +1,11 @@
-import org.portablescala.sbtplatformdeps._
+import org.portablescala.sbtplatformdeps.PlatformDepsGroupArtifactID
+import org.portablescala.sbtplatformdeps.PlatformDepsPlugin.autoImport._
+import sbt.Keys.libraryDependencies
 import sbt._
+
 object Dependencies {
 
-  val `mrpos-frontend`: Seq[ModuleID] = Seq(
+  val `mrpos-frontend`: Seq[sbt.ModuleID] = Seq(
 
     // P R O D U C T I O N
 
@@ -20,7 +23,7 @@ object Dependencies {
 
   )
 
-  val `mrpos-web`: Seq[ModuleID] = Seq(
+  val `mrpos-web` = Seq(
 
     // P R O D U C T I O N
 
@@ -30,10 +33,15 @@ object Dependencies {
 
   object Artifact {
 
+
   }
 
 
   object Version {
 
+    val slinky = "0.6.4+2-3c8aef65"
+    val scalajsDom = "0.9.7"
+
   }
+
 }

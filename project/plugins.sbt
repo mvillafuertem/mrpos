@@ -10,8 +10,5 @@ addSbtPlugin("org.scoverage" % "sbt-scoverage" % "1.6.1")
 // M D O C
 addSbtPlugin("org.scalameta" % "sbt-mdoc" % "2.1.1" )
 
-// S C A L A  J S
-addSbtPlugin("org.scala-js" % "sbt-scalajs" % "0.6.32")
-
-// S C A L A  J S  B U N D L E R
-addSbtPlugin("ch.epfl.scala" % "sbt-scalajs-bundler-sjs06" % "0.16.0")
+// S C A L A J S  B U N D L E R
+addSbtPlugin("ch.epfl.scala" % "sbt-scalajs-bundler" % "0.17.0")
